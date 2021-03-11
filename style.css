@@ -1,0 +1,49 @@
+body {
+  background-color: lightblue;
+}
+
+div {
+  width: 300px;
+  margin: auto;
+  margin-top: auto;
+}
+
+h2 {
+  margin-left: 20px;
+  width: auto;
+  height: auto;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 350px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+h3,
+span {
+  display: inline;
+}
+
+#weather-img {
+  display: block;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
