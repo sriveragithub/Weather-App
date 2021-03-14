@@ -1,5 +1,9 @@
 body {
   background-color: lightblue;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 
 div {
@@ -9,41 +13,62 @@ div {
 }
 
 h2 {
-  margin-left: 20px;
   width: auto;
   height: auto;
+  text-align: center;
+  font-size: 45px;
 }
 
 .container {
   padding: 2px 16px;
+  text-align: center;
+}
+
+input {
+  width: 100%;
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 350px;
+  opacity: .8;
+  border: 1px solid black;
+  margin-top: 4rem;
 }
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-h3,
+h3 {
+  display: block;
+}
+
+#temp-h3 {
+  display: inline;
+}
+
 span {
   display: inline;
 }
 
 #weather-img {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 80px;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    /* display: none; <- Crashes Chrome on hover */
-    -webkit-appearance: none;
-    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
 
 input[type=number] {
-    -moz-appearance:textfield; /* Firefox */
+  -moz-appearance:textfield; /* Firefox */
 }
