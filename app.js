@@ -71,30 +71,15 @@ submit.click(function(e) {
             })
                 .then(res => res.json())
                 .then(data => {
-                    let backImage = data.results[0].urls.full
-                    console.log(backImage);
+                    let backImage = data.results[0].urls.full;
                     $(document.body).css("background-image", `url(${backImage})`);
                 })
 
             return data;
         })
         .catch(err => {
-            console.log(err);
             $zip.html(input.val());
             $span.html('0');
             $city.html(err)
     })
 })
-
-
-// fetch(`https://api.unsplash.com/search/photos?page=1&query=${cityName}`, {
-//         headers: {
-//             'Accept-Version': 'v1',
-//             'Authorization': `Client-ID ${UNSPLASH_KEY}`
-//         }
-//     })
-//         .then(res => {
-//             console.log(cityName);
-//             console.log(res);
-//         })
-//         .then(data => console.log(data.results[0].urls.full))
