@@ -24,17 +24,43 @@ h2 {
   text-align: center;
 }
 
-input {
+.search-area {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox */
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  max-width: 300px;
   width: 100%;
+  background-color: white;
+  opacity: .8;
+  border: 1px solid black;
+  margin-top: 1rem;
+}
+
+.search-form label,
+.search-form input,
+.search-form button {
+  display: block;
+  text-align: center;
+  margin: 0 auto 1rem auto;
+}
+
+.search-form input {
+  width: 90%;
 }
 
 .card {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox */
+  box-sizing: border-box;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 350px;
+  max-width: 300px;
+  width: 100%;
   opacity: .8;
   border: 1px solid black;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .card:hover {
