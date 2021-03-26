@@ -52,7 +52,7 @@ submit.click(function(e) {
         .then(data => errorHandler(data))
         .then(data => {
             $zip.html(input.val());
-            $span.html(data.main.temp);
+            $span.html(data.main.temp + `&#176;`);
             $city.html(data.name);
             cityName = data.name;
             if (data.main.temp > 70) {
